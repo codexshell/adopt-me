@@ -1,5 +1,6 @@
 const fetchBreedList = async ({ queryKey }) => {
-  const animal = queryKey[1];
+  // eslint-disable-next-line no-unused-vars
+  const [_, animal] = queryKey;
 
   if (!animal) return [];
 

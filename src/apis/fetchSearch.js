@@ -1,5 +1,6 @@
 const fetchPets = async ({ queryKey }) => {
-  const { animal, location, breed } = queryKey[1];
+  // eslint-disable-next-line no-unused-vars
+  const [_, { animal, location, breed }] = queryKey;
   const response = await fetch(
     `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
   );
