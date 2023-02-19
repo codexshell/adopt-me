@@ -2,7 +2,7 @@ const fetchPets = async ({ queryKey }) => {
   // eslint-disable-next-line no-unused-vars
   const [_, { animal, location, breed }] = queryKey;
   const response = await fetch(
-    `http://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
+    `https://pets-v2.dev-apis.com/pets?animal=${animal}&location=${location}&breed=${breed}`
   );
 
   if (!response.ok) {
